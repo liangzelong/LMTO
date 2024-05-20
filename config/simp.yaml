@@ -1,0 +1,15 @@
+base:
+  nelx: 100
+  nely: 100
+  volfrac: 0.5
+additional:
+  penal: 3.0
+filter:
+  ft: "Sensivity"
+  rmin: 1.5
+symmetry:
+  dim: 0
+  type: "max"
+topopt_method: "BESO"
+optimizer: "BESO_OC"
+boundary: "BridgeForceTop"

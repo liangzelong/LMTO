@@ -1,0 +1,13 @@
+nelx: 400
+nely: 100
+volfrac: 0.5
+penal: 3.0
+rmin: 1.5
+ft: "conv"
+bc: "BridgeForceTop"
+opt_method: "BESO_OC"
+symmerty:
+  dim: 0
+  method: "max"
+alpha: 1.0
+refpath: "/home/lzl/project/lmto/refimage/hole.png"

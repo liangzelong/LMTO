@@ -1,0 +1,5 @@
+wandb
+outputs/*/*.png
+*.pyc
+*/*.pyc
+*/*/*.pyc

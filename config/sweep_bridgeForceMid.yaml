@@ -1,0 +1,87 @@
+program: LMTO_wandb_args.py
+name: sweepdemo
+project: lmto-zzb1
+method: grid
+metric:
+  goal: minimize
+  name: compliance
+parameters: 
+  volfrac:
+    values: [0.25,0.35,0.45]
+  alpha:
+    values: [2,3,4,5,6]
+  bc:
+    values: ['BridgeForceMid']
+  refpath:
+    values: [
+      "refimage/LVLM_BC2/00000-123735837-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00000-1996318766-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00000-2295641520-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00000-4046492362-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00001-123735838-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00001-1996318767-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00001-2295641521-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00001-4046492363-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00002-123735839-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00002-1996318768-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00002-2295641522-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00002-4046492364-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00003-123735840-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00003-1996318769-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00003-2295641523-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00003-4046492365-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00004-123735841-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00004-1996318770-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00004-2295641524-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00004-4046492366-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00005-123735842-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00005-1996318771-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00005-2295641525-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00005-4046492367-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00006-123735843-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00006-1996318772-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00006-2295641526-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00006-4046492368-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00007-123735844-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00007-1996318773-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00007-2295641527-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00007-4046492369-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00008-1470586754-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00008-2426619838-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00008-448801796-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00008-954953630-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00009-1470586755-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00009-2426619839-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00009-448801797-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00009-954953631-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00010-1470586756-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00010-2426619840-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00010-448801798-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00010-954953632-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00011-1470586757-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00011-2426619841-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00011-448801799-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00011-954953633-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00012-1470586758-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00012-2426619842-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00012-448801800-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00012-954953634-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00013-1470586759-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00013-2426619843-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00013-448801801-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00013-954953635-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00014-1470586760-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00014-2426619844-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00014-448801802-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00014-954953636-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00015-1470586761-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00015-2426619845-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00015-448801803-a Gothic style bridge.png",
+      "refimage/LVLM_BC2/00015-954953637-a Gothic style bridge.png",
+      ]
+
+# command:
+#   - ${env}
+#   - python
+#   - ${program}
+#   - ${args_no_hyphens}

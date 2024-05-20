@@ -1,0 +1,13 @@
+from .nodes_collection import LMTO_node
+
+
+NODE_CLASS_MAPPINGS = {}
+NODE_DISPLAY_NAME_MAPPINGS = {}
+
+for module in (LMTO_node, ):
+    NODE_CLASS_MAPPINGS.update(module.NODE_CLASS_MAPPINGS)
+    NODE_DISPLAY_NAME_MAPPINGS.update(module.NODE_DISPLAY_NAME_MAPPINGS)
+
+
+WEB_DIRECTORY = "./web"
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "WEB_DIRECTORY"]
