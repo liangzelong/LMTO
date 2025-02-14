@@ -5,11 +5,20 @@ Materialization*"
 
 Start from a concept forward to modify or generate structure design with high performance!
 
-## Designs 
-**Beautiful bridges:**
+## Design Examples 
+### 1.Bridges design with different approach
+
 ![](./assets/2dbridge.png)
+- **a** : LVLM designs with high preferences;
+- **b** : TO designs with high performance ;
+- **c** : LMTO designs with high performance and preference;
+- **d** : LMTO can explore the variety of the joint space;
 
+### 2.Design results overview
 
+![](./assets/2dbridge_overview.png)
+All 934 designs under different boundary conditions are
+[here](https://wandb.ai/langleo/lmto-GothicBridge/reports/LMTO-for-Gothic-Style-Bridge-Design--VmlldzoxMTM1MDc2MA?accessToken=a8kml1ase4hzxceu35c9kfox1yn169pg7pfge294ku4n9gkj7rq92yvxshyulmfb)
 ## Update
 - [x] 2D LMTO scripts
 - [x] ComfyUI node and flow for LMTO
